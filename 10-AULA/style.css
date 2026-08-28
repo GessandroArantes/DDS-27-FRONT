@@ -1,0 +1,68 @@
+/* =========================================
+       O * aeleciona todos os elementos 
+===========================================*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* =========================================
+                Seletor por TAG 
+   =========================================*/ 
+body { 
+    background-color: azure;
+    font-family: 'Segoe UI', Tahoma, 
+    Geneva, Verdana, sans-serif; 
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    } 
+
+/* =========================================
+                SELETOR POR ID    
+   =========================================*/ 
+#topo{ 
+    background-color: aquamarine;
+    margin: 15px 0px;
+    border: 10px solid orange; 
+    padding: 10px;
+}
+
+
+/* =========================================
+             Seletor por Class        
+   =========================================*/
+.texto-top{
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+/* ============================================
+    Estilizando os elementos com a class bloco
+   ============================================*/
+.bloco{
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 20px;
+}   
+
+.destaque{
+    background-color: gold;
+    margin: 15px 0px;
+    border: 10px solid orange; 
+    padding: 10px;
+}
+
+.texto-destaque{
+    font-weight: bolder;
+    color: red;
+}
+
+/* #ede9fe */
+
+
+
