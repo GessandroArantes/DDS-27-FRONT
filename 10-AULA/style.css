@@ -10,7 +10,8 @@
                 Seletor por TAG 
    =========================================*/ 
 body { 
-    background-color: azure;
+    text-align: center;
+    background-color: blue;
     font-family: 'Segoe UI', Tahoma, 
     Geneva, Verdana, sans-serif; 
     padding-top: 20px;
@@ -25,8 +26,9 @@ body {
 #topo{ 
     background-color: aquamarine;
     margin: 15px 0px;
-    border: 10px solid orange; 
+    border: 5px solid orange; 
     padding: 10px;
+    text-align: center;
 }
 
 
@@ -37,6 +39,7 @@ body {
     font-style: italic;
     text-decoration: underline;
     font-size: 25px;
+    color: #ede9fe;
 }
 
 /* ============================================
@@ -62,7 +65,104 @@ body {
     color: red;
 }
 
-/* #ede9fe */
+#caixa-unica{
+    background-color: #ede9fe;
+    padding: 10px;
+    border: 2px solid purple;
+}
 
+/* ================================================
+SELECIONA TODOS OS 'p' QUE ESTÃO DENTRO DE UMA DIV 
+===================================================*/
+div p{
+    color: blue;
+}
 
+/* =============================================================
+SELECIONA TODOS O 'p' QUE SÃO FILHOS DIRETOS DA CLASS ESPECÍFICA
+================================================================= */
+.pai-direto > p {
+    color: green;
+    padding: 5px;
+}
 
+/* ==========================================
+SELECIONA TODO O 'p' QUE VEM LOGO APÓS UM H3 
+=============================================*/
+h3 + p {
+    color: red;
+}
+
+/* =============================================================
+Seleciona todos os 'p' que vem após o h4, desde que sejao irmãos 
+================================================================*/
+h4 ~ p{
+    color: #ede9fe;
+}
+
+/* ==============================================
+Seleciona todos os inputs que tenham o tipo texto
+=================================================*/
+input[type="text"]{
+    border: 2px solid orange;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+input[type="password"]{
+    border: 2px solid black;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+/*=====================================================
+Selecionar todos os links que tenham esse valor no href
+=======================================================*/
+a[href*="microsoft"]{
+    color: green;
+    font-weight: bolder;
+}
+
+/*================= 
+centralizar titulos
+===================*/
+h2{
+    text-align: center;
+    font-weight: 900;
+}
+
+h5, h6 {
+    color: purple;
+    margin: 5px 0px;
+    font-weight: bolder;
+}
+
+/*=========================================================
+Seleciona o elemento que tem as duas classes ao mesmo tempo 
+===========================================================*/
+.botao.ativo{
+    color: black;
+    padding: 50px;
+}
+
+/*==============================================
+Seleciona o 'p' desde de que tenha a class aviso 
+================================================*/
+.aviso{
+    color: chartreuse;
+}
+
+/*==========================================
+Seleciona apenas a div que tenha o id painel 
+============================================*/
+div#painel{
+    background-color: rebeccapurple;
+    padding: 10px;
+}
+
+/*================================
+Selecionando filho dentro de filho
+================================== */
+#menu ul li a{
+    color: violet;
+}
