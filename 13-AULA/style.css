@@ -1,0 +1,31 @@
+body{
+    background-color: aquamarine;
+}
+
+.material-symbols-outlined{
+    color: blue;
+    font-size: 48px;
+}
+.icones{
+    font-size: 98px;
+}
+
+.icones{
+    font-size: 100px;
+    color: red;
+    transition: 1s;
+}
+
+.icones:hover{
+    color: white;
+    background-color: purple;
+    font-size: 200px;
+    transition: 3s;
+}
+
+.menu{
+    font-size: 200px;
+}
+
+
+
