@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aula +Top mobile</title>
+
+    <!-- IMPORTAÇÃO DO CSS BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- iMPORTAÇÃO DO MEU CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- CABEÇALHO -->
+    <header>
+      <!-- BARRA DE NAVEGAÇAO -->
+      <nav
+        class="navbar bg-warning border-bottom border-body navbar-expand-lg"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://t3.ftcdn.net/jpg/03/43/04/62/360_F_343046215_qeJ9btMnkJ58wziuAPmXRqaBkNaVbAqI.jpg"
+              alt="Bootstrap"
+              width="66"
+              height="66"
+            />
+            C&G Soluções</a
+          >
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CORPO -->
+    <main class="container-fluid">
+      <h1 class="text-center m-3 p-2">INÍCO DO SITE +BRABÃO DA REGÃO</h1>
+
+       <!-- Criando div com classes do bootstrap -->
+      <!-- row - diz que a div é linha -->
+      <!-- g - gap entre os elementos -->
+      <div class="row g-3">
+        <!-- col - diz que a div é coluna -->
+        <!-- bg - controla o fundo da div -->
+        <!-- p - padding -->
+        <!-- text - cor do texto -->
+        <!-- md - breakpoint de tamanho médio >=700px -->
+        <!-- xl - breakpoint de tamanho grande >=1200px -->
+        <div class="col col-12 col-md-6 col-xl-3 bg-success p-5 text-white">
+          Coluna A
+        </div>
+        <div class="col col-12 col-md-6 col-xl-3 bg-danger px-5 text-dark">
+          Coluna 2
+        </div>
+        <div class="col col-12 col-md-6 col-xl-3 bg-info py-4 text-danger">
+          Coluna ômega
+        </div>
+        <div class="col col-12 col-md-6 col-xl-3 bg-warning pb-3 text-success">
+          Coluna Fim
+        </div>
+      </div>
+
+      <!-- DISPLAY GRID COM BOOTSTRAP -->
+      <h2 class="my-3">Display Grid</h2>
+      <div class="row gap-2">
+        <div class="p-2 text-white rounded-3 fs-1 bg-danger col-6">OPÇÃO</div>
+        <div class="p-2 text-white rounded-3 fs-1 bg-warning col-6">OPÇÃO</div>
+        <div class="p-2 text-white rounded-3 fs-1 bg-success col-3">OPÇÃO</div>
+        <div class="p-2 text-white rounded-3 fs-1 bg-danger col-3">OPÇÃO</div>
+        <div class="p-2 text-white rounded-3 fs-1 bg-warning col-3">OPÇÃO</div>
+        <div class="p-2 text-white rounded-3 fs-1 bg-success col-3">OPÇÃO</div>
+      </div>
+
+      <!-- DISPLAY FLEX COM BOOTSTRAP -->
+      <h2 class="my-3">Display flex</h2>
+      <div class="d-flex gap-3 p-3 justify-content-around aling-items-center flex-wrap">
+        <div class="p-2 text-white rounded-3 fs-1 bg-danger">OPÇÃO</div>
+        <div class="p-2 text-white rounded-3 fs-1 bg-warning">OPÇÃO</div>
+        <div class="p-2 text-white rounded-3 fs-1 bg-success">OPÇÃO</div>
+        <div class="p-2 text-white rounded-3 fs-1 bg-danger">OPÇÃO</div>
+        <div class="p-2 text-white rounded-3 fs-1 bg-warning">OPÇÃO</div>
+        <div class="p-2 text-white rounded-3 fs-1 bg-success">OPÇÃO</div>
+      </div>
+
+      <!-- CARD GROUP -->
+      <div class="card-group">
+        <div class="card">
+          <img
+            src="https://t.ctcdn.com.br/ofl4DBAqPWdSSzd-8Rudb4wLgUs=/1200x675/smart/i1004775.jpeg"
+            class="card-img-top"
+            alt="Monza"
+            width="300px"
+            height="300px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Chevrolet Monza:</h5>
+            <p class="card-text">
+              Um clássico inesquecível do mercado automotivo brasileiro. Ícone
+              de sofisticação e conforto nas décadas de 80 e 90, o Monza
+              destaca-se pelo espaço interno generoso, rodar macio e mecânica
+              robusta que conquistou gerações.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://rodasdeligaleve.com.br/media/mageplaza/blog/post/resize/855x500/v/w/vw-golf-mk4-sapao-1999-2007.jpg"
+            class="card-img-top"
+            alt="Golf"
+            width="300px"
+            height="300px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Volkswagen Golf:</h5>
+            <p class="card-text">
+              O hatch médio que se tornou referência mundial em dirigibilidade,
+              desempenho e tecnologia. Com design esportivo e acabamento
+              refinado, o Golf entrega uma experiência de condução dinâmica,
+              precisa e marcante.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://production.autoforce.com/uploads/version/profile_image/13509/model_middle_webp_comprar-gr-sport_3dde4c0dff.png.webp"
+            class="card-img-top"
+            alt="Corolla"
+            width="300px"
+            height="300px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Toyota Corolla:</h5>
+            <p class="card-text">
+              Sinônimo global de confiabilidade, durabilidade e conforto. O
+              sedan mais vendido do mundo combina eficiência de combustível,
+              rodar suave e alto valor de revenda, sendo a escolha ideal para
+              quem busca tranquilidade e sofisticação no dia a dia.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL TOP -->
+      <!-- BUTTON TRIGGER MODAL -->
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        RESGATE OFERTA
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel" >PARABÉNS</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div>
+                <img
+                  src="https://estuda.com/wp-content/uploads/2023/12/001_abr_edit_fogos_esplanada_010120abr_00003_agencia-brasil.webp"
+                  alt="Fogos"
+                  width="100%"
+                  height="400px"
+                />
+              </div>
+              VOCÊ ACABOU DE GANHAR UM DESCONTO IMPERDIVEL, CLIQUE E CONFIRA
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                DEIXAR PASSAR
+              </button>
+              <button type="button" class="btn btn-primary">APROVEITAR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer></footer>
+
+    <!-- IMPORTAÇÃO DO JAVASCRIPT DO BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
